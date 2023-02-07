@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <!-- <v-row>
     <v-col class="text-center">
       <img src="/v.png" alt="Vuetify.js" class="mb-5" />
       <blockquote class="blockquote">
@@ -11,11 +11,10 @@
         </footer>
       </blockquote>
     </v-col>
-  </v-row>
+  </v-row> -->
 </template>
 
 <script>
 export default {
-  name: 'InspirePage',
 }
 </script>
