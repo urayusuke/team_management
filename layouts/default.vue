@@ -2,10 +2,13 @@
 
 <template>
   <v-app>
-    <v-app-bar>
-      <v-app-bar-title>{{ title }}</v-app-bar-title>
-    </v-app-bar>
-    <v-navigation-drawer>
+    <header>
+      <v-app-bar>
+        <v-app-bar-nav-icon @click="sideBarDrawer = !sideBarDrawer"></v-app-bar-nav-icon>
+        <v-toolbar-title>{{ title }}</v-toolbar-title>
+      </v-app-bar>
+    </header>
+    <v-navigation-drawer v-model="sideBarDrawer" fixed temporary>
       <v-sheet
         color="grey lighten-4"
         class="pa-4"
@@ -17,20 +20,23 @@
         ></v-avatar>
       </v-sheet>
 
-      <v-list>
-        <v-list-item v-for="(l, i) in sideBarList">
+      <v-list-item-group>
+        <v-list-item v-for="l in sideBarList" :key="l.id">
           <v-icon>{{ l.icon }}</v-icon>
           <v-list-item-content>
             <v-list-item-title>{{ l.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-      </v-list>
+      </v-list-item-group>
+
     </v-navigation-drawer>
+
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
+
     <v-footer></v-footer>
   </v-app>
 </template>
