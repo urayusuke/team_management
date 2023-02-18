@@ -1,12 +1,33 @@
-import { Component, Vue } from 'vue-property-decorator'
-import RegisterForm from "~/components/module/auth/RegisterForm";
+import Vue from 'vue'
 
-@Component({
-  components:{
-    RegisterForm,
+export default Vue.extend({
+  data () {
+    return {
+      title: 'TEAM MANAGEMENT',
+      sideBarDrawer: false,
+      sideBarList: [
+        {
+          id: 1,
+          title: 'お知らせ',
+          icon: 'mdi-bullhorn'
+        },
+        {
+          id: 2,
+          title: 'メンバー一覧',
+          icon: 'mdi-account-group'
+        },
+        {
+          id: 3,
+          title: '出 欠',
+          icon: 'mdi-calendar-month'
+        },
+        {
+          id: 4,
+          title: 'テーマ設定',
+          icon: 'mdi-wrench-cog-outline'
+        },
+      ],
+
+    }
   },
 })
-
-export default class RegisterFormComponent extends Vue {
-
-}

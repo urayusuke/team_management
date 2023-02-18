@@ -18,7 +18,11 @@
           color="grey darken-1"
           size="64"
         ></v-avatar>
+        <div>
+          <v-btn dark color="primary">ログイン</v-btn>
+        </div>
       </v-sheet>
+
 
       <v-list-item-group>
         <v-list-item v-for="l in sideBarList" :key="l.id">
