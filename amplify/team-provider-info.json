@@ -10,6 +10,53 @@
       "StackName": "amplify-teammanagement-dev-224845",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:153221053887:stack/amplify-teammanagement-dev-224845/4c03d7e0-b125-11ed-b25d-0e7838d005ff",
       "AmplifyAppId": "d3ssaztoj1vemy"
+    },
+    "categories": {
+      "api": {
+        "teammanagement": {}
+      }
+    }
+  },
+  "team": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-teammanagement-team-232140-authRole",
+      "UnauthRoleArn": "arn:aws:iam::153221053887:role/amplify-teammanagement-team-232140-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::153221053887:role/amplify-teammanagement-team-232140-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-teammanagement-team-232140-deployment",
+      "UnauthRoleName": "amplify-teammanagement-team-232140-unauthRole",
+      "StackName": "amplify-teammanagement-team-232140",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:153221053887:stack/amplify-teammanagement-team-232140/30dd5b40-cf06-11ed-afd6-0adf1a03aac5",
+      "AmplifyAppId": "d3ssaztoj1vemy"
+    },
+    "categories": {
+      "api": {
+        "teammanagement": {}
+      },
+      "auth": {
+        "teammanagementf3dee12c": {}
+      }
+    }
+  },
+  "devteam": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-teammanagement-devteam-114429-authRole",
+      "UnauthRoleArn": "arn:aws:iam::153221053887:role/amplify-teammanagement-devteam-114429-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::153221053887:role/amplify-teammanagement-devteam-114429-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-teammanagement-devteam-114429-deployment",
+      "UnauthRoleName": "amplify-teammanagement-devteam-114429-unauthRole",
+      "StackName": "amplify-teammanagement-devteam-114429",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:153221053887:stack/amplify-teammanagement-devteam-114429/4b328280-d100-11ed-9416-0e1504ed61cb",
+      "AmplifyAppId": "d3ssaztoj1vemy"
+    },
+    "categories": {
+      "auth": {
+        "teammanagementf3dee12c": {}
+      },
+      "api": {
+        "teammanagement": {}
+      }
     }
   }
 }
