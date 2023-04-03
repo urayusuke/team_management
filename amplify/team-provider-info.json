@@ -1,0 +1,36 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-teammanagement-dev-190755-authRole",
+      "UnauthRoleArn": "arn:aws:iam::153221053887:role/amplify-teammanagement-dev-190755-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::153221053887:role/amplify-teammanagement-dev-190755-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-teammanagement-dev-190755-deployment",
+      "UnauthRoleName": "amplify-teammanagement-dev-190755-unauthRole",
+      "StackName": "amplify-teammanagement-dev-190755",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:153221053887:stack/amplify-teammanagement-dev-190755/3d32a460-d13e-11ed-bece-0e776a43a1fd",
+      "AmplifyAppId": "d15defla1wlwyt"
+    }
+  },
+  "team": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-teammanagement-team-213730-authRole",
+      "UnauthRoleArn": "arn:aws:iam::153221053887:role/amplify-teammanagement-team-213730-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::153221053887:role/amplify-teammanagement-team-213730-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-teammanagement-team-213730-deployment",
+      "UnauthRoleName": "amplify-teammanagement-team-213730-unauthRole",
+      "StackName": "amplify-teammanagement-team-213730",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:153221053887:stack/amplify-teammanagement-team-213730/22e5a700-d153-11ed-916d-0a59cfa81cb7",
+      "AmplifyAppId": "d15defla1wlwyt"
+    },
+    "categories": {
+      "api": {
+        "teammanagement": {}
+      },
+      "auth": {
+        "teammanagement2ce753dc": {}
+      }
+    }
+  }
+}
