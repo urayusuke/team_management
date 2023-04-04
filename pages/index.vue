@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div v-if="authState !== 'signedin'">You are signed out.</div>
+    <div v-if="authState !== 'signedin'">
+      <nuxt-link to="/auth/login">Login</nuxt-link>
+      <nuxt-link to="/auth/signup">Sign Up</nuxt-link>
+    </div>
     <amplify-authenticator>
       <div v-if="authState === 'signedin' && user">
         <div>Hello, {{user.username}}</div>
