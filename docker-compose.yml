@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    container_name: "team_management"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ~/team_management:/api
