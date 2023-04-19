@@ -1,9 +1,9 @@
-FROM rust:1.55.0
+FROM rust:latest
 
-WORKDIR /api
+WORKDIR /team_management/api
 
-COPY .. /api
+COPY . .
 
-RUN cargo install --path /api
+RUN cargo install --path .
 
 CMD ["cargo", "run"]
