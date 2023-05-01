@@ -8,7 +8,19 @@ WORKDIR /api
 COPY . .
 
 # Rustの依存関係をビルド
-RUN cargo build --release
+RUN apt-get update && \
+    apt-get install -y default-libmysqlclient-dev && \
+    cargo install diesel_cli --no-default-features --features mysql
+
+RUN cargo clean && \
+    cargo update && \
+    cargo build --release
+
+RUN diesel migration run && \
+    diesel migration generate
+
+# Cargo.lockを削除
+RUN rm Cargo.lock
 
 # 起動コマンドを指定
 CMD ["./target/release/api"]
